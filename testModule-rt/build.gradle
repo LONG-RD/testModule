@@ -1,0 +1,29 @@
+/* Module Build File */
+apply from: "${System.getenv("niagara_home")}/etc/gradle/niagara.gradle"
+apply from: "${System.getenv("niagara_home")}/etc/gradle/idea.gradle"
+
+description     = "Test Module"
+ext {
+  name            = "testModule"
+  project.group   = "longbldg"
+  project.version = "1.0"
+}
+niagaraModule {
+  preferredSymbol = "tm1"
+  moduleName = "testModule"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+  compile "Tridium:nre:4.2"
+  compile "Tridium:baja:4.2"
+  compile "Tridium:alarm-rt:4.2"
+  compile "Tridium:bql-rt:4.2"
+  compile "Tridium:control-rt:4.2"
+  compile "Tridium:history-rt:4.2"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

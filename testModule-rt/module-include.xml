@@ -1,0 +1,12 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--org.longBuild.training-->
+  <type class="org.longBuild.training.BAndOr" name="AndOr"/>
+  <!--com.longBldg-->
+  <type class="com.longBldg.BBooleanLatch" name="BooleanLatch"/>
+  <type class="com.longBldg.BButtonMan" name="ButtonMan"/>
+  <!--com.longBldg.testModule-->
+  <type class="com.longBldg.testModule.BAndOr" name="AndOr"/>
+</types>
